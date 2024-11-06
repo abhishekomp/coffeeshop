@@ -1,0 +1,58 @@
+[
+  {
+    "code": "COFFEE_001",
+    "name": "Cappuccino",
+    "description": "A double shot of espresso with steamed milk of your choice, 8oz",
+    "image_url": "http://imagehub.com/001.jpg",
+    "price": 12.90
+  },
+  {
+    "code": "COFFEE_002",
+    "name": "Latte",
+    "description": "Our drip coffee features a rich flavor, bold aroma, and smooth texture, made from freshly ground high-quality coffee beans.",
+    "image_url": "http://imagehub.com/002.jpg",
+    "price": 15.90
+  },
+  {
+    "code": "COFFEE_003",
+    "name": "Espresso",
+    "description": "Double shot of espresso with 2oz of chocolate sauce and 8oz of steamed milk",
+    "image_url": "http://imagehub.com/003.jpg",
+    "price": 8.90
+  },
+  {
+    "code": "COFFEE_004",
+    "name": "Macchiato",
+    "description": "Best Macchiato in town",
+    "image_url": "http://imagehub.com/004.jpg",
+    "price": 9.90
+  },
+  {
+    "code": "COFFEE_005",
+    "description": "Rich shots of Espresso Dolce combined with steamed milk and topped with a layer of thick foam.",
+    "price": 19.90,
+    "name": "Latte Ultimate",
+    "image_url": "http://imagehub.com/005.jpg"
+  },
+  {
+    "code": "COFFEE_006",
+    "description": "Double Espresso",
+    "price": 16.90,
+    "name": "Double Espresso",
+    "image_url": "http://imagehub.com/006.jpg"
+  },
+  {
+    "code": "COFFEE_007",
+    "description": "cold-brewed iced coffee",
+    "price": 9.90,
+    "name": "Ice Kaffe",
+    "image_url": "http://imagehub.com/007.jpg"
+  },
+  {
+    "code": "COFFEE_008",
+    "description": "Ghirardelli® cocoa, espresso and steamed milk with a swirl of whipped cream.",
+    "price": 22.90,
+    "name": "Mocha",
+    "image_url": "http://imagehub.com/008.jpg"
+  }
+]
