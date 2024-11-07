@@ -43,7 +43,7 @@
   },
   {
     "code": "COFFEE_007",
-    "description": "cold-brewed iced coffee",
+    "description": "Cold-brewed iced coffee",
     "price": 9.90,
     "name": "Ice Kaffe",
     "image_url": "http://imagehub.com/007.jpg"
@@ -141,7 +141,7 @@
   },
   {
     "code": "COFFEE_021",
-    "description": "a big scoop of vanilla ice cream with a hot espresso shot poured over it",
+    "description": "A big scoop of vanilla ice cream with a hot espresso shot poured over it",
     "price": 20.90,
     "name": "Affogato",
     "image_url": "http://imagehub.com/008.jpg"

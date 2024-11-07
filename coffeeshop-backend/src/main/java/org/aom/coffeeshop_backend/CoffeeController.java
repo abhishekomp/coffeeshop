@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/coffeeshop-api/")
+@RequestMapping("/api/coffeeShop")
 public class CoffeeController {
     private static final Logger logger = LoggerFactory.getLogger(CoffeeController.class);
 
@@ -19,11 +19,16 @@ public class CoffeeController {
         this.coffeeService = coffeeService;
     }
 
-    @GetMapping("")
-    public ResponseEntity<List<CoffeeEntity>> getAllPosts(){
-        logger.info("PostController::getAllPosts() was invoked");
-        List<CoffeeEntity> all = coffeeService.getAllCoffee();
-        return ResponseEntity.ok(all);
+//    @GetMapping("")
+//    public ResponseEntity<List<CoffeeEntity>> getAllPosts(){
+//        logger.info("PostController::getAllPosts() was invoked");
+//        List<CoffeeEntity> all = coffeeService.getAllCoffee();
+//        return ResponseEntity.ok(all);
+//    }
+
+    @GetMapping
+    PagedResult<Coffee> getProducts(@RequestParam(name = "page", defaultValue = "1") int pageNo){
+        return coffeeService.getProducts(pageNo);
     }
 
     @PostMapping("")
