@@ -36,6 +36,7 @@ The project (multi-module maven project) consists of the following applications:
 Once the application is running, you can interact access the application using following endpoint:
 
 - Front end application: `http://localhost:8080`
+- H2 Console: `http://localhost:8081/h2`
 
 The above endpoint will show the main page for the web application along with Cart in the upper right side.
 
