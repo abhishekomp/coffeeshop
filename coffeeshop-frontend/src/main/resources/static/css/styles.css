@@ -25,3 +25,16 @@ body {
     font-size: 0.875rem;
     */
 }
+
+#footer{
+    background-color: rgb(38, 91, 178);
+    color: white;
+    text-align: center;
+    position: absolute;
+    /* width: 100%; */
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    padding: 10px;
+    font-size: 1.25rem;
+}
