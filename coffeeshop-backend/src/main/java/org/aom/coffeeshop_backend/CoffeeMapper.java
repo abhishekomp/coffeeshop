@@ -15,4 +15,13 @@ public class CoffeeMapper {
                 productEntity.getImageUrl(),
                 productEntity.getPrice());
     }
+
+    static CoffeeSQLRecord toCoffeeSQLRecord(CoffeeEntity productEntity) {
+        return new CoffeeSQLRecord(
+                productEntity.getCode(),
+                productEntity.getName(),
+                productEntity.getDescription(),
+                productEntity.getImageUrl(),
+                productEntity.getPrice());
+    }
 }

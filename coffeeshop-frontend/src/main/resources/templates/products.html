@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/fragments/layouts/base_layout}"
+>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{css/styles.css}" />
     <title>Coffee Page</title>
 </head>
-<body>
+<div layout:fragment="content">
+    <div th:x-data="|initData('${pageNo}')|">
+        <h2>Product's total count: <span x-text="products.totalElements">9999</span></h2>
+        <div th:replace="~{fragments/pagination :: pagination}"> </div>
+        <ul>
+            <template x-for="product in products.data">
+                <li x-text="product.name" style="color: brown; font-size: 1.5rem"></li>
+            </template>
+        </ul>
+    </div>
+</div>
+<!--<body>
     <h1>Display All Coffees</h1>
     <h2 th:text="'Variable PageNo is(displayed using thymeleaf): ' + ${pageNo}">This should get substituted using Thymeleaf directive</h2>
 
@@ -16,5 +31,8 @@
     <script src="/webjars/jquery/3.7.1/jquery.js"></script>
     <script src="/webjars/bootstrap/5.3.3/js/bootstrap.bundle.js"></script>
     <script defer src="/webjars/alpinejs/3.13.10/dist/cdn.min.js"></script>
-</body>
+</body>-->
+<div layout:fragment="pageScripts">
+    <script src="/js/products.js"></script>
+</div>
 </html>
