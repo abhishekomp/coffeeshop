@@ -38,6 +38,36 @@ function updateCartItemCount(){
     $('#cart-item-count').text('(' + count + ')');
 }
 
+const deleteCart = function() {
+    localStorage.removeItem(BOOKSTORE_STATE_KEY)
+    updateCartItemCount();
+}
+
+function getCartTotal() {
+    let cart = getCart();
+    let totalAmount = 0;
+    cart.items.forEach(item => {
+        totalAmount = totalAmount + (item.price * item.quantity);
+    });
+    return totalAmount;
+}
+
+const updateProductQuantity = function(code, quantity) {
+    let cart = getCart();
+    if(quantity < 1) {
+        cart.items = cart.items.filter(itemModel => itemModel.code !== code);
+    } else {
+        let cartItem = cart.items.find(itemModel => itemModel.code === code);
+        if (cartItem) {
+            cartItem.quantity = parseInt(quantity);
+        } else {
+            console.log("Product code is not already in Cart, ignoring")
+        }
+    }
+    localStorage.setItem(BOOKSTORE_STATE_KEY, JSON.stringify(cart));
+    updateCartItemCount();
+}
+
 /*const addToCart = function(product) {
     console.log("inside cartStore.js:addToCart ran");
 }*/
