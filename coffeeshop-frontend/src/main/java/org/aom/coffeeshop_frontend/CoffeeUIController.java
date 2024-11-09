@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 //@RequestMapping("/")
 class CoffeeUIController {
 
-    private static final Logger log = LoggerFactory.getLogger(CoffeeUIController.class);
+    private static final Logger logger = LoggerFactory.getLogger(CoffeeUIController.class);
 
     @GetMapping
     String index() {
@@ -27,8 +27,8 @@ class CoffeeUIController {
 
     @GetMapping("/products")
     String showProductsPage(@RequestParam(name = "page", defaultValue = "1") int page, Model model) {
+        logger.info("CoffeeUIController:showProductsPage() called with pageNo: {}", page);
         model.addAttribute("pageNo", page);
         return "products";
     }
-
 }

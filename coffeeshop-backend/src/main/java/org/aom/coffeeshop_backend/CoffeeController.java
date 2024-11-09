@@ -28,15 +28,14 @@ public class CoffeeController {
 
     @GetMapping
     PagedResult<Coffee> getProducts(@RequestParam(name = "page", defaultValue = "1") int pageNo){
+        logger.info("CoffeeController:getProducts() was invoked with pageNo: {}", pageNo);
         return coffeeService.getProducts(pageNo);
     }
 
     @PostMapping("")
     @ResponseStatus(HttpStatus.CREATED)
     public CoffeeEntity addNewCoffee(@RequestBody CoffeeEntity coffee){
-        logger.info("CoffeeController::addNewCoffee() was invoked");
+        logger.info("CoffeeController::addNewCoffee() was invoked with coffee: {}", coffee);
         return coffeeService.addNewCoffee(coffee);
     }
-
-
 }
