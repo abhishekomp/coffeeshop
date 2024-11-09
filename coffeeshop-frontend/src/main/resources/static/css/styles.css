@@ -39,3 +39,9 @@ body {
     padding: 10px;
     font-size: 1.25rem;
 }
+
+/*
+.card .img-fit{
+  aspect-ratio: 16 /9;
+  object-fit: cover;
+}*/

@@ -3,154 +3,154 @@
     "code": "COFFEE_001",
     "name": "Cappuccino",
     "description": "A double shot of espresso with steamed milk of your choice, 8oz",
-    "image_url": "http://imagehub.com/001.jpg",
+    "image_url": "img/coffee-9168610_640.jpg",
     "price": 12.90
   },
   {
     "code": "COFFEE_002",
     "name": "Latte",
     "description": "Our drip coffee features a rich flavor, bold aroma, and smooth texture, made from freshly ground high-quality coffee beans.",
-    "image_url": "http://imagehub.com/002.jpg",
+    "image_url": "img/the-coffee-4651087_640.jpg",
     "price": 15.90
   },
   {
     "code": "COFFEE_003",
-    "name": "Espresso",
-    "description": "Double shot of espresso with 2oz of chocolate sauce and 8oz of steamed milk",
-    "image_url": "http://imagehub.com/003.jpg",
-    "price": 8.90
-  },
-  {
-    "code": "COFFEE_004",
-    "name": "Macchiato",
-    "description": "Best Macchiato in town",
-    "image_url": "http://imagehub.com/004.jpg",
-    "price": 9.90
-  },
-  {
-    "code": "COFFEE_005",
-    "description": "Rich shots of Espresso Dolce combined with steamed milk and topped with a layer of thick foam.",
-    "price": 19.90,
-    "name": "Latte Ultimate",
-    "image_url": "http://imagehub.com/005.jpg"
-  },
-  {
-    "code": "COFFEE_006",
-    "description": "Double Espresso",
-    "price": 16.90,
-    "name": "Double Espresso",
-    "image_url": "http://imagehub.com/006.jpg"
-  },
-  {
-    "code": "COFFEE_007",
-    "description": "Cold-brewed iced coffee",
-    "price": 9.90,
-    "name": "Ice Kaffe",
-    "image_url": "http://imagehub.com/007.jpg"
-  },
-  {
-    "code": "COFFEE_008",
-    "description": "Ghirardelli® cocoa, espresso and steamed milk with a swirl of whipped cream.",
-    "price": 22.90,
-    "name": "Mocha",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_009",
-    "description": "Den är rik, krämig och fyllig och är framtagen utav den finaste belgiska chokladen. A cup of pure love!",
-    "price": 12.90,
-    "name": "HOT CHOCOLATE FRÅN MR CAKE",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_010",
-    "description": "Vivace är en mörkrost med kraftig men balanserad karaktär.",
-    "price": 6.90,
-    "name": "Vivace",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_011",
-    "description": "En Caffè Latte smaksatt med pumpasyrup, toppad med vispgrädde och kanelströssel.",
-    "price": 5.90,
-    "name": "Pumpkin Latte Standard",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_012",
-    "description": "Latte gjord på krämigt ångspunnen mjölk med smak av vanilj.",
-    "price": 11.90,
-    "name": "Vanilj Latte",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_013",
-    "description": "Dubbel espresso toppad med lika delar krämigt ångspunnen mjölk.",
-    "price": 14.90,
-    "name": "Cortado",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_014",
-    "description": "Vår Signature Brew är en fyllig och rund mellanrost med lång eftersmak och tydliga toner av choklad, nötter och marsipan.",
-    "price": 12.90,
-    "name": "Signature Brew",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_015",
-    "description": "Ekologiskt te från Dear Tea Society. Rooibos med jordgubbar, blåbär och ringblomma.",
-    "price": 18.90,
-    "name": "Te - Rooibos",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_016",
-    "description": "Krämig ångspunnen mjölk tillsammans med ett caramel chokladpulver",
-    "price": 17.90,
-    "name": "Caramel Gold Chocolate",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_017",
-    "description": "Ekologiskt te från Dear Tea Society. Grönt te med mango och havtorn.",
-    "price": 8.90,
-    "name": "Te - Green Passion",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_018",
-    "description": "Espresso, ripplad kolasås, salt karamellsyrup, kall mjölk och is.",
-    "price": 15.50,
-    "name": "Islatte Salted Caramel",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_019",
-    "description": "Kryddigt sötat te med kardemumma, nejlika, kanel, mjölk och is.",
-    "price": 6.90,
-    "name": "Ischai Standard",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_020",
-    "description": "Vår egen kallpressade smoothie med avokado, spenat, mango och banan.",
-    "price": 17.90,
-    "name": "Smoothie - Avokado och äpple",
-    "image_url": "http://imagehub.com/008.jpg"
-  },
-  {
-    "code": "COFFEE_021",
     "description": "A big scoop of vanilla ice cream with a hot espresso shot poured over it",
     "price": 20.90,
     "name": "Affogato",
-    "image_url": "http://imagehub.com/008.jpg"
+    "image_url": "img/coffee-8388244_640.jpg"
   },
   {
-    "code": "COFFEE_022",
+    "code": "COFFEE_004",
     "description": "Speciality Coffee från Uganda, med smaker av mjölkchoklad, röda bär och nypon.",
     "price": 8.90,
     "name": "Seasonal Brew",
-    "image_url": "http://imagehub.com/008.jpg"
+    "image_url": "img/coffee-2365402_640.jpg"
+  },
+  {
+    "code": "COFFEE_005",
+    "name": "Espresso",
+    "description": "Double shot of espresso with 2oz of chocolate sauce and 8oz of steamed milk",
+    "image_url": "img/caffeine-1867326_640.jpg",
+    "price": 8.90
+  },
+  {
+    "code": "COFFEE_006",
+    "name": "Macchiato",
+    "description": "Best Macchiato in town",
+    "image_url": "img/cappuccino-756490_640.jpg",
+    "price": 9.90
+  },
+  {
+    "code": "COFFEE_007",
+    "description": "Rich shots of Espresso Dolce combined with steamed milk and topped with a layer of thick foam.",
+    "price": 19.90,
+    "name": "Latte Ultimate",
+    "image_url": "img/coffee-1117933_640.jpg"
+  },
+  {
+    "code": "COFFEE_008",
+    "description": "Ekologiskt te från Dear Tea Society. Rooibos med jordgubbar, blåbär och ringblomma.",
+    "price": 18.90,
+    "name": "Te - Rooibos",
+    "image_url": "img/coffee-3727673_640.jpg"
+  },
+  {
+    "code": "COFFEE_009",
+    "description": "Cold-brewed iced coffee",
+    "price": 9.90,
+    "name": "Ice Kaffe",
+    "image_url": "img/coffee-2306471_640.jpg"
+  },
+  {
+    "code": "COFFEE_010",
+    "description": "Ghirardelli® cocoa, espresso and steamed milk with a swirl of whipped cream.",
+    "price": 22.90,
+    "name": "Mocha",
+    "image_url": "img/coffee-2608864_640.jpg"
+  },
+  {
+    "code": "COFFEE_011",
+    "description": "Den är rik, krämig och fyllig och är framtagen utav den finaste belgiska chokladen. A cup of pure love!",
+    "price": 12.90,
+    "name": "HOT CHOCOLATE FRÅN MR CAKE",
+    "image_url": "img/coffee-2714970_640.jpg"
+  },
+  {
+    "code": "COFFEE_012",
+    "description": "Vivace är en mörkrost med kraftig men balanserad karaktär.",
+    "price": 6.90,
+    "name": "Vivace",
+    "image_url": "img/coffee-6171744_640.jpg"
+  },
+  {
+    "code": "COFFEE_013",
+    "description": "En Caffè Latte smaksatt med pumpasyrup, toppad med vispgrädde och kanelströssel.",
+    "price": 5.90,
+    "name": "Pumpkin Latte Standard",
+    "image_url": "img/coffee-6984075_640.jpg"
+  },
+  {
+    "code": "COFFEE_014",
+    "description": "Latte gjord på krämigt ångspunnen mjölk med smak av vanilj.",
+    "price": 11.90,
+    "name": "Vanilj Latte",
+    "image_url": "img/cup-6854258_640.jpg"
+  },
+  {
+    "code": "COFFEE_015",
+    "description": "Dubbel espresso toppad med lika delar krämigt ångspunnen mjölk.",
+    "price": 14.90,
+    "name": "Cortado",
+    "image_url": "img/pexels-tyler-nix-1259808-2396220.jpg"
+  },
+  {
+    "code": "COFFEE_016",
+    "description": "Vår Signature Brew är en fyllig och rund mellanrost med lång eftersmak och tydliga toner av choklad, nötter och marsipan.",
+    "price": 12.90,
+    "name": "Signature Brew",
+    "image_url": "img/coffee-7561288_640.jpg"
+  },
+  {
+    "code": "COFFEE_017",
+    "description": "Double Espresso",
+    "price": 16.90,
+    "name": "Double Espresso",
+    "image_url": "img/coffee-1869599_640.jpg"
+  },
+  {
+    "code": "COFFEE_018",
+    "description": "Krämig ångspunnen mjölk tillsammans med ett caramel chokladpulver",
+    "price": 17.90,
+    "name": "Caramel Gold Chocolate",
+    "image_url": "img/latte-1565931_640.jpg"
+  },
+  {
+    "code": "COFFEE_019",
+    "description": "Ekologiskt te från Dear Tea Society. Grönt te med mango och havtorn.",
+    "price": 8.90,
+    "name": "Te - Green Passion",
+    "image_url": "img/coffee-932103_640.jpg"
+  },
+  {
+    "code": "COFFEE_020",
+    "description": "Espresso, ripplad kolasås, salt karamellsyrup, kall mjölk och is.",
+    "price": 15.50,
+    "name": "Islatte Salted Caramel",
+    "image_url": "img/drink-4667507_640.jpg"
+  },
+  {
+    "code": "COFFEE_021",
+    "description": "Kryddigt sötat te med kardemumma, nejlika, kanel, mjölk och is.",
+    "price": 6.90,
+    "name": "Ischai Standard",
+    "image_url": "img/coffee-6371149_640.jpg"
+  },
+  {
+    "code": "COFFEE_022",
+    "description": "Vår egen kallpressade smoothie med avokado, spenat, mango och banan.",
+    "price": 17.90,
+    "name": "Smoothie - Avokado och äpple",
+    "image_url": "img/coffee-563797_640.jpg"
   }
 ]
