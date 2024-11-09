@@ -16,6 +16,7 @@ document.addEventListener('alpine:init', () => {
                     console.log("Products Resp:", resp);
                     this.products = resp;
                });
+               updateCartItemCount();   //needed so that the cart is re-loaded when user navigates to the next page to see the products.
             },
             addToCart(product) {
                 console.log("inside products.js:addToCart ran");
