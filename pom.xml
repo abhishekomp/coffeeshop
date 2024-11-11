@@ -18,6 +18,7 @@
     <modules>
         <module>coffeeshop-backend</module>
         <module>coffeeshop-frontend</module>
+        <module>coffeeshop-backend-orderservice</module>
     </modules>
 
 </project>
