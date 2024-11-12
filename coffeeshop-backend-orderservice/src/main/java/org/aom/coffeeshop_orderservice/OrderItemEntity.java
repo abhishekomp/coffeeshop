@@ -13,6 +13,7 @@ class OrderItemEntity {
     private Long id;
     private String code;
     private String name;
+    @Column(name="price", precision=4, scale=2)
     private BigDecimal price;
     private Integer quantity;
 
