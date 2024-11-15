@@ -1,12 +1,14 @@
 package org.aom.coffeeshop_orderservice;
 
 import org.aom.coffeeshop_orderservice.model.CreateOrderRequest;
+import org.aom.coffeeshop_orderservice.model.OrderDTO;
 import org.aom.coffeeshop_orderservice.model.OrderItem;
 import org.aom.coffeeshop_orderservice.model.OrderStatus;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 class OrderMapper {
     static OrderEntity convertToEntity(CreateOrderRequest request) {
@@ -27,5 +29,20 @@ class OrderMapper {
         }
         newOrder.setItems(orderItems);
         return newOrder;
+    }
+
+    static OrderDTO convertToDTO(OrderEntity order) {
+        Set<OrderItem> orderItems = order.getItems().stream()
+                .map(item -> new OrderItem(item.getCode(), item.getName(), item.getPrice(), item.getQuantity()))
+                .collect(Collectors.toSet());
+
+        return new OrderDTO(
+                order.getOrderNumber(),
+                order.getUserName(),
+                orderItems,
+                order.getCustomer(),
+                order.getDeliveryAddress(),
+                order.getStatus(),
+                order.getCreatedAt());
     }
 }

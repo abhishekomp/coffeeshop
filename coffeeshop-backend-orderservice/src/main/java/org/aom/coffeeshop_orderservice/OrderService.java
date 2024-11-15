@@ -2,10 +2,13 @@ package org.aom.coffeeshop_orderservice;
 
 import org.aom.coffeeshop_orderservice.model.CreateOrderRequest;
 import org.aom.coffeeshop_orderservice.model.CreateOrderResponse;
+import org.aom.coffeeshop_orderservice.model.OrderDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -26,5 +29,11 @@ public class OrderService {
         log.info("Created Order with orderNumber={}", savedOrder.getOrderNumber());
 
         return new CreateOrderResponse(savedOrder.getOrderNumber());
+    }
+
+    public Optional<OrderDTO> getOrderByOrderNumber(String orderNum) {
+        log.info("OrderService::getOrderByOrderNumber() was called");
+        return orderRepository.findByOrderNumber(orderNum)
+                .map(OrderMapper::convertToDTO);
     }
 }

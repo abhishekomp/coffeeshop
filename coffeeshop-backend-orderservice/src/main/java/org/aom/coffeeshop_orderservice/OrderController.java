@@ -3,6 +3,7 @@ package org.aom.coffeeshop_orderservice;
 import jakarta.validation.Valid;
 import org.aom.coffeeshop_orderservice.model.CreateOrderRequest;
 import org.aom.coffeeshop_orderservice.model.CreateOrderResponse;
+import org.aom.coffeeshop_orderservice.model.OrderDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -27,5 +28,13 @@ class OrderController {
         String userName = "dummy_user";
         log.info("Creating order for user: {}", userName);
         return orderService.createOrder(userName, request);
+    }
+
+    @GetMapping("{orderNumber}")
+    OrderDTO getOrder(@PathVariable(name = "orderNumber") String orderNum) {
+        log.info("Inside OrderController::getOrder() with orderNumber: {}", orderNum);
+        return orderService
+                .getOrderByOrderNumber(orderNum)
+                .orElseThrow(() -> new RuntimeException("Order not found"));
     }
 }
