@@ -44,11 +44,16 @@ const deleteCart = function() {
 }
 
 function getCartTotal() {
+    console.log("inside function getCartTotal()");
     let cart = getCart();
     let totalAmount = 0;
     cart.items.forEach(item => {
+        console.log("item.price: ", item.price);
         totalAmount = totalAmount + (item.price * item.quantity);
     });
+    console.log("inside function getCartTotal(). totalAmount: ", totalAmount);
+    totalAmount = Math.round((totalAmount + Number.EPSILON) * 100) / 100;
+    console.log("inside function getCartTotal(). totalAmount(after fix): ", totalAmount);
     return totalAmount;
 }
 
