@@ -1,9 +1,6 @@
 package org.aom.coffeeshop_orderservice;
 
-import org.aom.coffeeshop_orderservice.model.CreateOrderRequest;
-import org.aom.coffeeshop_orderservice.model.OrderDTO;
-import org.aom.coffeeshop_orderservice.model.OrderItem;
-import org.aom.coffeeshop_orderservice.model.OrderStatus;
+import org.aom.coffeeshop_orderservice.model.*;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -44,5 +41,13 @@ class OrderMapper {
                 order.getDeliveryAddress(),
                 order.getStatus(),
                 order.getCreatedAt());
+    }
+
+    static OrderSummary convertToOrderSummary(OrderEntity order){
+        return new OrderSummary(
+                order.getOrderNumber(),
+                order.getStatus(),
+                order.getCreatedAt()
+        );
     }
 }

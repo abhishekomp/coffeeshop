@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        layout:decorate="~{/fragments/layouts/base_layout}"
+>
+<head>
+    <title>Orders</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div th:x-data="|initData('${pageNo}')|">
+        <h2>
+            All Orders Summarized here. Total count of Orders:
+            <span x-text="orders.totalElements">999</span>
+        </h2>
+        <hr />
+        <div class="pb-3">
+            <table class="table table-stripped">
+                <thead>
+                <tr>
+                    <!--                    <th scope="col">S.No.</th>-->
+                    <th scope="col">Order#</th>
+                    <th scope="col">Ordered On</th>
+                    <th scope="col">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <template x-for="order in orders.data">
+                    <tr>
+                        <!--                        <td x-text="item.name">s.no.</td>-->
+                        <td x-text="order.orderNumber">orderNumber</td>
+                        <td x-text="order.createdAt">createdAt</td>
+                        <td x-text="order.status">status</td>
+                    </tr>
+                </template>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="1" style="text-align: left">
+                        Number of Orders:
+                        <span x-text="orders.totalElements">Number of Orders</span>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<div layout:fragment="pageScripts">
+    <script src="/js/orders.js"></script>
+</div>
+</body>
+</html>

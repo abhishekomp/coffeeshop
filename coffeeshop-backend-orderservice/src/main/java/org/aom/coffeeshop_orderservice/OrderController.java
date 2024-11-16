@@ -1,9 +1,7 @@
 package org.aom.coffeeshop_orderservice;
 
 import jakarta.validation.Valid;
-import org.aom.coffeeshop_orderservice.model.CreateOrderRequest;
-import org.aom.coffeeshop_orderservice.model.CreateOrderResponse;
-import org.aom.coffeeshop_orderservice.model.OrderDTO;
+import org.aom.coffeeshop_orderservice.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -36,5 +34,11 @@ class OrderController {
         return orderService
                 .getOrderByOrderNumber(orderNum)
                 .orElseThrow(() -> new RuntimeException("Order not found"));
+    }
+
+    @GetMapping()
+    PagedResult<OrderSummary> getOrders(@RequestParam(name = "page", defaultValue = "1") int pageNo){
+        log.info("OrderController:getOrders() was invoked with pageNo: {}", pageNo);
+        return orderService.getOrders(pageNo);
     }
 }
