@@ -21,16 +21,16 @@
             <table class="table table-stripped">
                 <thead>
                 <tr>
-                    <!--                    <th scope="col">S.No.</th>-->
+                    <th scope="col">S.No.</th>
                     <th scope="col">Order#</th>
                     <th scope="col">Ordered On</th>
                     <th scope="col">Status</th>
                 </tr>
                 </thead>
                 <tbody>
-                <template x-for="order in orders.data">
+                <template x-for="(order, index) in orders.data" :key="index">
                     <tr>
-                        <!--                        <td x-text="item.name">s.no.</td>-->
+                        <td x-text="index +1">s.no.</td>
                         <td x-text="order.orderNumber">orderNumber</td>
                         <td x-text="order.createdAt">createdAt</td>
                         <td x-text="order.status">status</td>
